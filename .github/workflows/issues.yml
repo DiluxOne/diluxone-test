@@ -31,7 +31,7 @@ jobs:
     permissions:
       contents: read
       issues: write
-    uses: DiluxOne/.github/.github/workflows/issue-triage.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/issue-triage.yml@v7
     with:
       support-url: https://github.com/DiluxOne/.github/blob/main/SUPPORT.md
     secrets: inherit
@@ -43,7 +43,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-    uses: DiluxOne/.github/.github/workflows/issue-repro.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/issue-repro.yml@v7
     secrets: inherit
 
   repro-triaged:
@@ -54,7 +54,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-    uses: DiluxOne/.github/.github/workflows/issue-repro.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/issue-repro.yml@v7
     with:
       trigger: triage
       triage-bug: ${{ needs.triage.outputs.bug }}
@@ -74,7 +74,7 @@ jobs:
       actions: write
       issues: read
       pull-requests: read
-    uses: DiluxOne/.github/.github/workflows/issue-accepted.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/issue-accepted.yml@v7
     secrets:
       DILUX_BOT_PRIVATE_KEY: ${{ secrets.DILUX_BOT_PRIVATE_KEY }}
       # The shaping's model, with no tools (#588).
@@ -91,7 +91,7 @@ jobs:
   claim:
     permissions:
       contents: read
-    uses: DiluxOne/.github/.github/workflows/issue-claim.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/issue-claim.yml@v7
     secrets: inherit
 
   # What waits on whom (#564, waiting-update.yml): on every event of an
@@ -103,6 +103,6 @@ jobs:
     if: github.event_name != 'schedule'
     permissions:
       contents: read
-    uses: DiluxOne/.github/.github/workflows/waiting-update.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/waiting-update.yml@v7
     secrets:
       DILUX_BOT_PRIVATE_KEY: ${{ secrets.DILUX_BOT_PRIVATE_KEY }}
