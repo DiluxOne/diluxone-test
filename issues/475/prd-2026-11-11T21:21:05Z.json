@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 475,
+  "prd_sha256": "4d9e26723ca861041137b2dc374c5d7d5f2bf6ad18d51b4a62a3aa7ac8d59f07",
+  "prd": "### Problem\n\nScenario: decision-sub-issues.\n\nThe test repository has neither a greeting nor a farewell.\n\n### Scope\n\n- A greeting file.\n- A farewell file.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when it is read, then it has a greeting and a farewell.\n\n### Criticality\n\nNormal\n\n### Repositories\n\nname: diluxone-test",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-11T21:21:05Z",
+  "policy": "DiluxOne/.github@9bd7c1a74a4f"
+}
