@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 563,
+  "prd_sha256": "7cecf25d24f785cad378bdfa45a2d9f61aab3b9f5635d7c1147055a5e7e8e4d8",
+  "prd": "### Problem\n\nScenario: high-risk-waits.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-11T21:59:28Z",
+  "policy": "DiluxOne/.github@8aa755a9c421"
+}
