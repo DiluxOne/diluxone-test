@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 466,
+  "prd_sha256": "2d295852afa9371e248beab643bec04e891bd94bf5d0ac4d66a181fda0c55e9d",
+  "prd": "### Problem\n\nScenario: bug-reproduced.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-11T21:20:58Z",
+  "policy": "DiluxOne/.github@9bd7c1a74a4f"
+}
