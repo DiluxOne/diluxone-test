@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 693,
+  "prd_sha256": "d60962264b701179dfc84e524de3669153199777a0f20805311cc9797c96fccc",
+  "prd": "### Problem\n\nScenario: ready-behind-main.\n\nThe test repository has no greeting.\n\n### Scope\n\n- A greeting file.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when it is read, then it has a greeting.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-14T03:28:11Z",
+  "policy": "DiluxOne/.github@96a9e47cf083"
+}
