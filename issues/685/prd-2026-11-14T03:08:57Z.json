@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 685,
+  "prd_sha256": "e2742023d14d43ab8263556e6662c03816e726d6db12448b5b333e88a55285bf",
+  "prd": "### Problem\n\nScenario: ready-behind-main.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-14T03:08:57Z",
+  "policy": "DiluxOne/.github@9f62fec7e31b"
+}
