@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 803,
+  "prd_sha256": "1ff5e1048c1dde6518d798f4b0fa4734c9f0343ffd7f7246248982bf04e433be",
+  "prd": "### Problem\n\nScenario: merge-queue.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-14T05:09:52Z",
+  "policy": "DiluxOne/.github@939e8b7c9888"
+}
