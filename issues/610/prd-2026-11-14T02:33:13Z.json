@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 610,
+  "prd_sha256": "39205a2e6c8f1db144c5d31eee8026a95d6b50a4df5cb02c36bf267624a73286",
+  "prd": "### Problem\n\nScenario: fork-without-secrets.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-14T02:33:13Z",
+  "policy": "DiluxOne/.github@bbe32ba7507a"
+}
