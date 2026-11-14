@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 613,
+  "prd_sha256": "1df8dc033bd615a5fd28773195657158877ed80eaa7cd63d992bdabec664fb90",
+  "prd": "### Problem\n\nScenario: low-risk-merges.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-14T02:33:08Z",
+  "policy": "DiluxOne/.github@bbe32ba7507a"
+}
