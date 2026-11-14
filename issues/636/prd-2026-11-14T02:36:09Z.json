@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 636,
+  "prd_sha256": "16a58527368ba285db5e03b3915d48e0d17003c069a44404d8eef311543ca76c",
+  "prd": "### Problem\n\nScenario: draft-in-conflict.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-14T02:36:09Z",
+  "policy": "DiluxOne/.github@bbe32ba7507a"
+}
