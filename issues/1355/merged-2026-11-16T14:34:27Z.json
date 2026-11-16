@@ -1,0 +1,28 @@
+{
+  "kind": "merge-receipt",
+  "issue": 1355,
+  "at": "2026-11-16T14:34:27Z",
+  "prd_sha256": "1df8dc033bd615a5fd28773195657158877ed80eaa7cd63d992bdabec664fb90",
+  "prd_matches_seal": true,
+  "spec_sha256": null,
+  "accepted_by": "pablodiloreto",
+  "pull_request": 1378,
+  "head_commit": "0a42542035eb8f47661051a2a7d453e31abe6a3e",
+  "merge_commit": "12b13fe12155744db6afc32c3565e123784790e1",
+  "merged_by": "dilux-bot",
+  "review": {
+    "risk": "low",
+    "complexity": "low",
+    "type": "test"
+  },
+  "checks": {
+    "pending": 4,
+    "cancelled": 3,
+    "skipped": 26,
+    "success": 18
+  },
+  "criteria": [
+    "C1"
+  ],
+  "policy": "DiluxOne/.github@f9d33915a879"
+}
