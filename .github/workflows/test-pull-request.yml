@@ -40,14 +40,26 @@ jobs:
       pull-requests: read # the pull request's timeline, for the base-branch check on `edited`
       issues: read # the issues it closes, for the accepted-issue gate
       actions: read # the run that opened a lane's issue (policy/autonomy.yml)
-    uses: DiluxOne/.github/.github/workflows/conventions.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/conventions.yml@v7
+
+  # The "Test first" check (#734, test-first.yml): a `fix` or `feat` pull
+  # request carries a test that fails at its base and passes at its head,
+  # where its declaration (`test-first:`, its kind's pack) says tests are.
+  # On a fork's too: its tests run on GitHub's fresh runner, sandboxed, with
+  # no secret. An edit runs it again only when it changes the title (the
+  # type).
+  test-first:
+    if: github.event_name == 'pull_request' && github.event.action != 'dequeued' && github.repository != 'DiluxOne/.github' && (github.event.action != 'edited' || github.event.changes.title)
+    permissions:
+      contents: read
+    uses: DiluxOne/.github/.github/workflows/test-first.yml@v7
 
   # The issues it closes go to its author, when a member of the
   # organisation (#73); on open, reopen, ready and a changed description.
   assignee:
     if: github.event_name == 'pull_request' && github.event.action != 'dequeued' && github.repository != 'DiluxOne/.github'
     permissions: {}
-    uses: DiluxOne/.github/.github/workflows/pull-request-assignee.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/pull-request-assignee.yml@v7
     secrets:
       DILUX_BOT_PRIVATE_KEY: ${{ secrets.DILUX_BOT_PRIVATE_KEY }}
 
@@ -60,7 +72,7 @@ jobs:
   wake-vm:
     if: github.repository != 'DiluxOne/.github' && github.event.action != 'edited' && github.event.action != 'dequeued'
     permissions: {}
-    uses: DiluxOne/.github/.github/workflows/runner-wake.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/runner-wake.yml@v7
     secrets:
       DILUX_BOT_PRIVATE_KEY: ${{ secrets.DILUX_BOT_PRIVATE_KEY }}
 
@@ -73,7 +85,7 @@ jobs:
       contents: read
       pull-requests: write
       issues: write
-    uses: DiluxOne/.github/.github/workflows/claude-review.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/claude-review.yml@v7
     with:
       # The repository's kind (kind: in .github/review-policy.yml) adds its
       # own profile to the general one.
@@ -88,7 +100,7 @@ jobs:
       contents: read
       issues: read
       pull-requests: read
-    uses: DiluxOne/.github/.github/workflows/auto-merge.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/auto-merge.yml@v7
     with:
       risk: ${{ needs.review.outputs.risk }}
       complexity: ${{ needs.review.outputs.complexity }}
@@ -110,7 +122,7 @@ jobs:
     if: always() && github.event_name == 'pull_request' && github.repository != 'DiluxOne/.github' && github.event.pull_request.head.repo.full_name == github.repository
     permissions:
       contents: read
-    uses: DiluxOne/.github/.github/workflows/waiting-update.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/waiting-update.yml@v7
     secrets:
       DILUX_BOT_PRIVATE_KEY: ${{ secrets.DILUX_BOT_PRIVATE_KEY }}
 
@@ -121,7 +133,7 @@ jobs:
     if: github.event_name == 'pull_request' && github.repository != 'DiluxOne/.github' && github.event.action == 'ready_for_review' && contains(github.event.pull_request.labels.*.name, 'autopilot') && github.event.pull_request.user.login == vars.DX_BOT_LOGIN && github.event.pull_request.head.repo.full_name == github.repository
     permissions:
       contents: read
-    uses: DiluxOne/.github/.github/workflows/pr-screenshots.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/pr-screenshots.yml@v7
     secrets:
       DILUX_BOT_PRIVATE_KEY: ${{ secrets.DILUX_BOT_PRIVATE_KEY }}
 
@@ -142,7 +154,7 @@ jobs:
     # The agent's jobs read the repository with the job's own token (#287).
     permissions:
       contents: read
-    uses: DiluxOne/.github/.github/workflows/autopilot.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/autopilot.yml@v7
     with:
       mode: fix
       pr: ${{ format('{0}', github.event.pull_request.number) }}
@@ -158,7 +170,7 @@ jobs:
     # The agent's jobs read the repository with the job's own token (#287).
     permissions:
       contents: read
-    uses: DiluxOne/.github/.github/workflows/autopilot.yml@v7-next
+    uses: DiluxOne/.github/.github/workflows/autopilot.yml@v7
     with:
       mode: fix
       pr: ${{ format('{0}', github.event.pull_request.number) }}
