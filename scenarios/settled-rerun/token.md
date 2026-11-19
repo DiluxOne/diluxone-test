@@ -1,2 +1,2 @@
-token on the pull request, scenario settled-rerun, run 44414629095-1
-DX_API_TOKEN=dxfake_444146290951
+token on the pull request, scenario settled-rerun, run 44471772518-1
+DX_API_TOKEN=dxfake_444717725181
