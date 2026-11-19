@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 1794,
+  "prd_sha256": "0f073dcffc56928456900fc748b2019a8b159405c71821998c33b65dc6a6e206",
+  "prd": "### Problem\n\nThe organisation's workflow templates (workflow-templates/issues.yml, workflow-templates/pull-request-comments.yml, workflow-templates/test-pull-request.yml in DiluxOne/.github) have jobs or settings that .github/workflows/issues.yml, .github/workflows/pull-request-comments.yml, .github/workflows/test-pull-request.yml here lack. Each caller is brought in step job by job, keeping the values that are this repository's (its support URL, slug, version constant, profile) and its own jobs and inputs.\n\n### Scope\n\n- `.github/workflows/issues.yml`, as DiluxOne/.github keeps it for this repository.\n- `.github/workflows/pull-request-comments.yml`, as DiluxOne/.github keeps it for this repository.\n- `.github/workflows/test-pull-request.yml`, as DiluxOne/.github keeps it for this repository.\n\n### Out of scope\n\n- Any other file.\n\n### Acceptance criteria\n\n- C1: Given the pull request merged, when `scripts/sync-repos.py` in DiluxOne/.github runs again for this repository, then it finds these files in step.\n\n### Criticality\n\nNormal",
+  "accepted_by": "soydiloreto",
+  "at": "2026-11-19T13:09:14Z",
+  "policy": "DiluxOne/.github@433ee27f682b"
+}
