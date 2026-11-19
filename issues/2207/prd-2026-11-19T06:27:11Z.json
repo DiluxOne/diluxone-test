@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 2207,
+  "prd_sha256": "b53f9060c5671ff253ecb99ccd827cde256241cfca53457531f9c90ac9d28f6f",
+  "prd": "### Problem\n\nThe greeting said \"helo\" instead of \"hello\" once.\n\n### Scope\n\n- The greeting's word.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when `scenarios/bug-not-reproduced/greeting.md` is read, then it says \"hello\".\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-19T06:27:11Z",
+  "policy": "DiluxOne/.github@edbfa73b0ccd"
+}
