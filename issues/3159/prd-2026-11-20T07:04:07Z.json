@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 3159,
+  "prd_sha256": "f8442d777d7b7672c580b6ba62a92a3ce6b5ab311bc0c3af2e037b7768e45876",
+  "prd": "### Problem\n\nScenario: conventions-fix.\n\nThe test repository has no greeting.\n\n### Scope\n\n- A greeting file.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when it is read, then it has a greeting.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-20T07:04:07Z",
+  "policy": "DiluxOne/.github@d719323774f1"
+}
