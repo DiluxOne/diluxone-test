@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 3736,
+  "prd_sha256": "dfd11a899ef6a3b40840b6e66a2fd60c192323cc68c6d0cf083575faf2a80204",
+  "prd": "### Problem\n\nScenario: stop-answered.\n\nThe test repository has no greeting, and where it goes is a maintainer's call (the fixed change asks first).\n\n### Scope\n\n- A greeting file.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when it is read, then it has a greeting.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-21T05:59:35Z",
+  "policy": "DiluxOne/.github@d229648c4293"
+}
