@@ -1,0 +1,10 @@
+{
+  "kind": "merge-decision",
+  "pull_request": 3909,
+  "decided": "policy",
+  "rule": "policy/autonomy.yml#lanes.human-issue.merge",
+  "head": "97bc2a19e426e576a1a8fd9e80ddc98372729c20",
+  "policy": "DiluxOne/.github@bf71d084ccbe3c98cfc1f3cdf90f826d8fa6fb33",
+  "at": "2026-11-21T16:05:48Z",
+  "run": "https://github.com/DiluxOne/diluxone-test/actions/runs/44922510564"
+}
