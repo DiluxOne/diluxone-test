@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 3763,
+  "prd_sha256": "1e65bb086d13c30ea91da94436b25cc52485db2ea7bde7967ab0e8cfa87da065",
+  "prd": "### Problem\n\nScenario: bug-by-person-merges.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-21T05:58:32Z",
+  "policy": "DiluxOne/.github@d229648c4293"
+}
