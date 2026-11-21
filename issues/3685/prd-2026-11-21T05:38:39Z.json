@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 3685,
+  "prd_sha256": "5f23fb884ce5980c3e83b07551f9d9ecaa8c957e6cf62b2826ec5c5ed5b2cbea",
+  "prd": "### Problem\n\nA reader reported that the greeting of this scenario was misspelt as \"helo\".\n\n### Scope\n\n- The word the greeting says.\n\n### Out of scope\n\n- Any other file.\n\n### Acceptance criteria\n\n- C1: Given the repository, when `scenarios/bug-by-person-merges/greeting.md` is read, then it says \"hello\".\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-21T05:38:39Z",
+  "policy": "DiluxOne/.github@575c6fb7ba22"
+}
