@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 4389,
+  "prd_sha256": "59165c2ce1e6dde0c5d09fbc36ba53fc4d8155b64a1b1862b47fa74e8c39fdd6",
+  "prd": "### Problem\n\nA reader reported that the footer of this scenario was misspelt as \"thnaks\".\n\n### Scope\n\n- The word the footer says.\n\n### Out of scope\n\n- Any other file.\n\n### Acceptance criteria\n\n- C1: Given the repository, when `scenarios/bug-by-person-merges/footer.md` is read, then it says \"thanks\".\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-22T19:49:36Z",
+  "policy": "DiluxOne/.github@caa89e106909"
+}
