@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 4182,
+  "prd_sha256": "d49269f6af948c5e9db780d7ff5f4ff3b04f3b60e57f1b1b3885a369d09d934e",
+  "prd": "### Problem\n\nScenario: stop-edited-reaccepted-answered.\n\nThe test repository has no greeting, nor a farewell, and where they go is a maintainer's call (the fixed change asks first).\n\n### Scope\n\n- A greeting file and a farewell file.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when it is read, then it has a greeting.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-22T07:43:27Z",
+  "policy": "DiluxOne/.github@f5da6840775f"
+}
