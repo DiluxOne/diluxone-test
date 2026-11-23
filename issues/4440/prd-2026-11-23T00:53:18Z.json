@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 4440,
+  "prd_sha256": "d6ba13592ba15ffd182ced261b1cd2403e452d09ae8d85d9d8f5be32ec6a6ce7",
+  "prd": "### Problem\n\nScenario: settled-rerun.\n\nThe scenarios' directory has no note.\n\n### Scope\n\n- A note under the scenario's directory.\n\n### Out of scope\n\n- Anything else.\n\n### Acceptance criteria\n\n- C1: Given the repository, when the scenario's directory is read, then it has a note.\n\n### Criticality\n\nNormal",
+  "accepted_by": "pablodiloreto",
+  "at": "2026-11-23T00:53:18Z",
+  "policy": "DiluxOne/.github@a910e50437b3"
+}
