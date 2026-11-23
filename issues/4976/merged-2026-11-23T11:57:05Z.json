@@ -1,0 +1,35 @@
+{
+  "kind": "merge-receipt",
+  "issue": 4976,
+  "at": "2026-11-23T11:57:05Z",
+  "prd_sha256": "d60962264b701179dfc84e524de3669153199777a0f20805311cc9797c96fccc",
+  "prd_matches_seal": true,
+  "spec_sha256": "0a0d403988949101032c12bd95dc645e8c2161a9caf479918a0437ee7860b304",
+  "accepted_by": "pablodiloreto",
+  "pull_request": 5011,
+  "head_commit": "f6216601b2fbf5b595dbc2798ea2bb93772cc2db",
+  "merge_commit": "e32821a89c4f6147d8a58105f9f4d3bf70142709",
+  "merged_by": "policy",
+  "lane": null,
+  "lane_rule": null,
+  "lane_policy": null,
+  "accepted_at": null,
+  "merged_rule": "policy/autonomy.yml#lanes.human-issue.merge",
+  "merged_policy": "DiluxOne/.github@a92c61425bb2c4a1d0b6858e04dea4a89b5ae2cc",
+  "review": {
+    "risk": "low",
+    "complexity": "low",
+    "type": "feat"
+  },
+  "checks": {
+    "pending": 6,
+    "cancelled": 2,
+    "failure": 2,
+    "skipped": 29,
+    "success": 13
+  },
+  "criteria": [
+    "C1"
+  ],
+  "policy": "DiluxOne/.github@a92c61425bb2"
+}
