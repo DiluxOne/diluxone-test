@@ -1,0 +1,9 @@
+{
+  "kind": "prd-seal",
+  "issue": 4598,
+  "prd_sha256": "633680635e63a95a0900b9981ff7f5bd374e78274f686ab9cb7a030fcbf28a19",
+  "prd": "### Problem\n\nThe report in #4572 describes a defect, and the reproduction confirmed it: a fixed test written from the report fails on the default branch at `ac1ec68474eb0a085ec217bccd1ccd6df2feb76c` (https://github.com/DiluxOne/diluxone-test/actions/runs/45107715662).\n\nReproduction test: `tests/repro/test_issue_4572.py`, SHA-256 `e2541eb5be01253be955a2542d9c3c1ccf7321aa6fb9a4034f8c640c38462626`, on the branch `test/repro-issue-4572`.\n\nReproduction way: `fixed`, run by scripts/repro-run.sh as `{\"junit\":\"build/repro-4572.xml\",\"minutes\":5,\"run\":\"python3 tests/repro/test_issue_4572.py\",\"test\":\"tests/repro/test_issue_4572.py\"}`.\n\nThe test is the specification: it asserts what the report expected. It was written from an outsider's text, so it runs only the way it was written, in the reproduction's sandbox (scripts/repro-run.sh: the way's setup before the test is in the tree, then the test alone as a user of its own, with no environment, no secrets and no network but the machine's), never in the autopilot's working tree.\n\n### Scope\n\n- Fix the defect the reproduction test exercises, in the code it exercises.\n- Add the reproduction test to the default branch, exactly as written.\n\n### Out of scope\n\n- Changing, moving, skipping or deleting the reproduction test: it is the evidence, and gate G7 checks its SHA-256.\n- Any other behaviour the report mentions that the test does not exercise: a new issue.\n\n### Acceptance criteria\n\n- C1: Given the reproduction test tests/repro/test_issue_4572.py exactly as written, when it runs on the fix, then it passes, where it failed on ac1ec68474eb.\n\n### Criticality\n\nNormal",
+  "accepted_by": "policy (lane bugfix-reproduced)",
+  "at": "2026-11-23T03:46:22Z",
+  "policy": "DiluxOne/.github@4f55a170931b"
+}
